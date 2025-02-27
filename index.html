@@ -1889,7 +1889,16 @@ for (var attr in meta) {
           </label>
 
           
-              <button class="product-form__add-button button button--primary" type="submit" data-action="add-to-cart">COMPRAR AGORA</button>
+              <div id="scrollToTop" class="botaoflutuante">
+    <span class="button button--primary" id="clicar">COMPRAR AGORA</span>
+</div>
+
+<script>
+document.getElementById("clicar").addEventListener("click", function() {
+    window.location.href = "https://seu-link-aqui.com"; // Substitua pelo link desejado
+});
+</script>
+
           
 
 
@@ -2326,12 +2335,15 @@ for (var attr in meta) {
     </div>
   
   <div id="scrollToTop" class="botaoflutuante">
-    <span class="button button--primary" id="clicar" data-action="add-to-cart">COMPRAR AGORA</span>
-    <script>
-      $(document).ready(function () {
-        $("#clicar").on("click", function () {
-          $(".product-form__add-button").click();
-        });
+    <span class="button button--primary" id="clicar">COMPRAR AGORA</span>
+</div>
+
+<script>
+document.getElementById("clicar").addEventListener("click", function() {
+    window.location.href = "https://seu-link-aqui.com"; // Substitua pelo link desejado
+});
+</script>
+
 
         function verificarVisibilidadeBotao() {
           var botaoFlutuante = $('.botaoflutuante');
